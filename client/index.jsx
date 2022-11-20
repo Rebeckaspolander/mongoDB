@@ -80,10 +80,13 @@ function ListMovies(){
             <h1> Movies to come back to: </h1>
             {
                 data.map( (movie) => (
-                    <div key={movie.title}>
-                        <h1> {movie.title} </h1>
+                    <div key={movie.title}> <h1> {movie.title} -> ({movie.year}) </h1>
+                        {/*<div>
+                            {movie.plot}
+                        </div>*/}
                     </div>
                 ))}
+
         </div>
     );
 }
